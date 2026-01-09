@@ -48,6 +48,16 @@
             bindings = <&kp ENTER>;
             key-positions = <27 28 29>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <2 13>;
+        };
+
+        canc {
+            bindings = <&kp DEL>;
+            key-positions = <16 7>;
+        };
     };
 
     macros {
