@@ -126,10 +126,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp ESC    &bt BT_CLR  &kp UP    &kp PG_UP  &trans           &kp CARET  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-       &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp PG_DN        &trans     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&mo 4  &kp DEL    &kp HOME    &kp CAPS  &kp END    &kp BACKSPACE    &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &kp UNDERSCORE
-                              &trans    &trans     &trans           &kp ENTER  &kp KP_N0  &mo 2
+         &kp ESC    &bt BT_CLR  &kp UP    &kp PG_UP  &trans           &kp CARET  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
+         &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp PG_DN        &trans     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
+&kp DEL  &mo 4      &kp HOME    &kp CAPS  &kp END    &kp BACKSPACE    &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &kp UNDERSCORE
+                                &trans    &trans     &trans           &kp ENTER  &kp KP_N0  &mo 2
             >;
         };
 
@@ -187,9 +187,9 @@
 
         mouse {
             bindings = <
-        &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &mkp MCLK       &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans          &trans           &trans    &trans  &trans  &trans
             >;
         };
