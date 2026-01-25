@@ -128,7 +128,7 @@
          &kp ESC    &bt BT_CLR  &kp UP    &kp PG_UP  &kp CAPS         &kp CARET  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
          &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp PG_DN        &none      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
 &kp DEL  &none      &kp HOME    &none     &kp END    &kp BACKSPACE    &none      &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &kp UNDERSCORE
-                                &trans    &trans     &trans           &kp ENTER  &kp KP_N0  &mo 2
+                                &trans    &trans     &trans           &trans     &kp KP_N0  &trans
             >;
         };
 
