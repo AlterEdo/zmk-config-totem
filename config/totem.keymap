@@ -99,10 +99,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans      &kp W       &kp F        &kp P        &kp B        &kp J    &kp L        &kp U        &kp Y       &trans
-        &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G        &kp M    &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
-&trans  &trans      &kp X       &kp C        &kp D        &kp V        &kp K    &kp H        &kp Q        &kp Z       &trans      &trans
-                                &kp DEL      &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 ESC    &kp BSPC
+        &trans      &kp W       &kp F        &kp P        &kp B        &kp J          &kp L        &kp U        &kp Y       &trans
+        &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G        &kp M          &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
+&trans  &trans      &kp X       &kp C        &kp D        &kp V        &kp K          &kp H        &kp Q        &kp Z       &trans      &trans
+                                &kp DEL      &lt 1 TAB    &kp SPACE    &kp BACKSPACE  &lt 2 ESC    &kp RET
             >;
         };
 
@@ -126,8 +126,8 @@
 
             bindings = <
          &kp ESC    &bt BT_CLR  &kp UP    &kp PG_UP  &kp CAPS         &kp CARET  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-         &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp PG_DN        &trans     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&kp DEL  &trans     &kp HOME    &trans    &kp END    &kp BACKSPACE    &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &kp UNDERSCORE
+         &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp PG_DN        &none      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
+&kp DEL  &none      &kp HOME    &none     &kp END    &kp BACKSPACE    &none      &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &kp UNDERSCORE
                                 &trans    &trans     &trans           &kp ENTER  &kp KP_N0  &mo 2
             >;
         };
@@ -153,7 +153,7 @@
             bindings = <
          &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT        &kp CARET         &kp AMPS   &kp TILDE  &kp GRAVE        &kp KP_PLUS
          &kp QMARK  &kp LBRC  &kp LBKT   &kp LPAR  &kp BSLH         &kp SLASH         &kp RPAR   &kp RBKT   &kp RIGHT_BRACE  &kp KP_MINUS
-&kp SQT  &kp DQT    &kp RBRC  &kp COLON  &kp SEMI  &kp LESS_THAN    &kp GREATER_THAN  &kp COMMA  &kp DOT    &kp UNDERSCORE   &kp ASTRK     &kp KP_EQUAL
+&kp SQT  &kp DQT    &kp PIPE  &kp COLON  &kp SEMI  &kp LESS_THAN    &kp GREATER_THAN  &kp COMMA  &kp DOT    &kp UNDERSCORE   &kp ASTRK     &kp KP_EQUAL
                               &trans     &trans    &mo 3            &trans            &trans     &trans
             >;
         };
