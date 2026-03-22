@@ -48,19 +48,29 @@
             key-positions = <27 28 29>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
+        canc_left {
+            bindings = <&kp DELETE>;
             key-positions = <2 13>;
         };
 
-        canc {
+        canc_right {
             bindings = <&kp DEL>;
             key-positions = <16 7>;
         };
 
-        L_tab {
+        tab_left {
             bindings = <&kp TAB>;
             key-positions = <12 22 24>;
+        };
+
+        tab_right {
+            bindings = <&kp TAB>;
+            key-positions = <27 17 29>;
+        };
+
+        esc_right {
+            bindings = <&kp ESC>;
+            key-positions = <8 9>;
         };
     };
 
