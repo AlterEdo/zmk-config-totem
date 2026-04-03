@@ -40,12 +40,12 @@
 
         enter_left {
             bindings = <&kp ENTER>;
-            key-positions = <23 22 24>;
+            key-positions = <11 12 13>;
         };
 
         enter_right {
             bindings = <&kp ENTER>;
-            key-positions = <27 28 29>;
+            key-positions = <16 17 18>;
         };
 
         canc_left {
@@ -60,17 +60,32 @@
 
         tab_left {
             bindings = <&kp TAB>;
-            key-positions = <12 22 24>;
+            key-positions = <12 24 11>;
         };
 
         tab_right {
             bindings = <&kp TAB>;
-            key-positions = <27 17 29>;
+            key-positions = <27 17 18>;
         };
 
         esc_right {
             bindings = <&kp ESC>;
             key-positions = <8 9>;
+        };
+
+        shifttab_left {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <11 12 3>;
+        };
+
+        shifttab_right {
+            bindings = <&kp RS(TAB)>;
+            key-positions = <6 17 18>;
+        };
+
+        del_right {
+            bindings = <&kp DEL>;
+            key-positions = <28 29>;
         };
     };
 
@@ -115,38 +130,19 @@
             bindings = <
         &trans      &kp W       &kp F        &kp P        &kp B        &kp J          &kp L        &kp U        &kp Y       &trans
         &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G        &kp M          &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
-&trans  &trans      &kp X       &kp C        &kp D        &kp V        &kp K          &kp H        &kp Q        &kp Z       &trans      &trans
-                                &sl 0        &sl 1        &kp SPACE    &kp BACKSPACE  &sl 2        &kp RET
+&trans  &trans      &kp X       &kp C        &kp D        &kp V        &kp K          &kp H        &kp Q        &kp Z       &trans      &sl 4
+                                &sl 1        &sl 2        &kp SPACE    &kp BACKSPACE  &sl 3        &sl 0
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        nav_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "NAVI";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃           ┃           ┃     UP    ┃           ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃   SHIFT   ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃           ┃   P UP    ┃  C LOCK   ┃  P DOWN   ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃     *     ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃    TAB    ┃    SPC    ┃   ┃    DEL    ┃     0     ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
+        nav {
             bindings = <
-       &kp CAPSLOCK     &kp LEFT_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW  &none     &kp CARET       &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
-       &kp LEFT_GUI     &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT   &none     &kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
-&sl 3  &kp PRINTSCREEN  &kp HOME        &kp DOWN          &kp END          &none     &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp KP_EQUAL
-                                        &trans            &trans           &trans    &trans          &trans        &trans
+        &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &sl 4
+                          &trans    &trans     &trans       &trans  &trans  &trans
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         sim_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -172,7 +168,29 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        numpad {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
+            label = "NAVI";
+
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+            //             ┃           ┃           ┃     UP    ┃           ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
+            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+            //             ┃   SHIFT   ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
+            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+            // ┃           ┃           ┃   P UP    ┃  C LOCK   ┃  P DOWN   ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃     *     ┃           ┃
+            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+            //                                     ┃           ┃    TAB    ┃    SPC    ┃   ┃    DEL    ┃     0     ┃           ┃
+            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
+            bindings = <
+       &trans  &trans  &trans  &trans  &trans    &kp CARET       &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
+       &trans  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
+&sl 4  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp KP_EQUAL
+                       &trans  &trans  &trans    &trans          &trans        &trans
+            >;
+        };
 
         adjust_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -191,10 +209,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &bt BT_NXT  &none  &none   &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &kp F15  &kp F7  &kp F8  &kp F9  &kp F12
-       &bt BT_PRV  &none  &none   &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp F14  &kp F4  &kp F5  &kp F6  &kp F11
-&none  &bt BT_CLR  &none  &none   &kp K_MUTE         &kp C_POWER             &kp F13  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                          &trans  &trans             &trans                  &trans   &trans  &trans
+       &bt BT_NXT  &none  &kp PRINTSCREEN  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &kp F15  &kp F7  &kp F8  &kp F9  &kp F12
+       &bt BT_PRV  &none  &none            &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp F14  &kp F4  &kp F5  &kp F6  &kp F11
+&none  &bt BT_CLR  &none  &none            &kp K_MUTE         &kp C_POWER             &kp F13  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                          &trans           &trans             &trans                  &trans   &trans  &trans
             >;
         };
 
